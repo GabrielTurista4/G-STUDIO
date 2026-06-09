@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>G Studio</title>
-    <!-- Link para a fonte que funciona em Celular -->
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Ícone da G Studio na aba -->
     <link rel="icon" type="image/png" href="https://i.imgur.com/1UC2b2s.png">
     
     <style>
@@ -14,13 +12,23 @@
             padding: 0;
             background: linear-gradient(to bottom, #ff0000 0%, #ffffff 100%);
             background-attachment: fixed;
-            /* Usando a fonte do Google para não bugar no celular */
             font-family: 'Comic Neue', cursive; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
             min-height: 100vh;
         }
+        /* Estilo da nova barra */
+        .top-bar {
+            background-color: #ff0000;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 4px solid #000;
+        }
+        .top-bar a {
+            background-color: transparent; /* Transparente para destacar o vermelho da barra */
+            border: 2px solid #fff;
+            padding: 8px 20px;
+            margin: 0;
+        }
+        
         .card {
             background: rgba(255, 255, 255, 0.95);
             padding: 40px;
@@ -28,18 +36,11 @@
             box-shadow: 0 15px 35px rgba(0,0,0,0.4);
             text-align: center;
             max-width: 700px;
-            margin: 20px;
+            margin: 40px auto; /* Centralizado */
             border: 4px solid #000;
         }
-        h3 {
-            font-size: 28pt;
-            margin-top: 0;
-        }
-        p {
-            font-size: 14pt;
-            line-height: 1.5;
-            color: #000;
-        }
+        h3 { font-size: 28pt; margin-top: 0; }
+        p { font-size: 14pt; line-height: 1.5; color: #000; }
         a {
             background-color: #ff0000;
             color: white !important;
@@ -51,13 +52,7 @@
             margin: 10px 0;
             border: 2px solid #000;
         }
-        a:hover {
-            background-color: #cc0000;
-        }
-        img {
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+        a:hover { background-color: #cc0000; }
         .team-section {
             background: #f9f9f9;
             padding: 15px;
@@ -68,6 +63,11 @@
     </style>
 </head>
 <body>
+
+    <div class="top-bar">
+        <a href="https://gabrielturista4.github.io/G-STUDIO/comics.html"/">COMICS</a>
+    </div>
+
     <div class="card">
         <h3><span style="color: #ff0000;"><strong>WELCOME TO G STUDIO!</strong></span></h3>
         
@@ -77,13 +77,12 @@
         
         <div class="team-section">
             <p><strong>Note:</strong> We Are Not a Company And Just Random People, G Studio Is Owned By Gabriel GM And We Are Mostly Brazilians</p>
-            
             <p>We Have <strong>Gabriel GM</strong> (Main Programmer & Owner), <strong>Witzy Studios</strong> (Main Composer, Also He's Not Braziliam), <strong>Donizito</strong> (Main Artist), <strong>Arthur</strong> (Main Character Designer) And <strong>Julia</strong> (Secondary Character Designer)</p>
         </div>
         
         <p style="font-size: 20pt; font-weight: bold; margin-top: 20px;">HAVE FUN!!!</p>
-        
         <p><img src="https://i.imgur.com/1UC2b2s.png" alt="g studio logo" width="128" height="128" /></p>
     </div>
+
 </body>
 </html>
