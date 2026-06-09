@@ -1,59 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <!-- Importando a fonte Comic Neue do Google Fonts -->
+    <meta charset="UTF-8">
+    <title>G Studio - Comics</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         body {
-            /* Fundo gradiente: de vermelho (topo) para branco (baixo) */
             background: linear-gradient(to bottom, #ff0000, #ffffff);
-            /* Define a fonte Comic Neue, se não carregar, usa a Comic Sans MS padrão */
+            background-attachment: fixed;
             font-family: 'Comic Neue', 'Comic Sans MS', cursive;
             margin: 0;
             padding: 0;
             min-height: 100vh;
         }
 
-        /* Barra vermelha no topo */
         .top-bar-custom {
             background-color: #ff0000;
             padding: 15px;
             text-align: center;
+            border-bottom: 4px solid #000;
         }
         .top-bar-custom a {
             color: white;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2em;
-        }
-
-        /* Mantendo o seu estilo original do card */
-        .card {
-            border: 1px solid #ccc;
-            padding: 20px;
-            margin: 20px;
-            background-color: rgba(255, 255, 255, 0.8); /* Fundo levemente transparente para ler melhor */
+            font-size: 1.5em;
+            border: 2px solid #fff;
+            padding: 5px 15px;
             border-radius: 10px;
         }
+
+        .card {
+            border: 4px solid #000;
+            padding: 30px;
+            margin: 40px auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            max-width: 700px;
+            text-align: center;
+        }
+
+        .centered-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 250px;
+            border-radius: 10px;
+            border: 2px solid #000;
+            cursor: help; /* Muda o cursor para indicar que tem uma dica */
+        }
+
+        .team-section {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 15px;
+            border: 1px dashed #ff0000;
+            margin-bottom: 20px;
+        }
+
+        h3 { font-size: 28pt; margin-top: 0; }
+        p { font-size: 14pt; line-height: 1.5; color: #000; }
     </style>
 </head>
 <body>
 
-    <!-- Barra Vermelha -->
     <div class="top-bar-custom">
-        <a href="/G-STUDIO">Main Page</a>
+        <a href="https://gabrielturista4.github.io/G-STUDIO/">MAIN PAGE</a>
     </div>
-
 
     <div class="card">
         <h3><span style="color: #ff0000;"><strong>GABRIEL EPIC COMICS!</strong></span></h3>
+        
         <div class="team-section">
             <p>We Are Proud To Announce That We Are Working On Official Gabriel Comics, It Will Be Available For Free On This Page Soon, And We Are Working On a Physical Release, But We Are Not Releasing Because We Can't Do This.</p>
-            <h1>Who Are Doing It?</h1>
+            <h3>Who Are Doing It?</h3>
             <p>Gabriel And Arthur Is Working On These Comics, i Really Hope We Do More Of This Because It Has Potential.,</p>
             <p>- Gabriel GM (:</p>
         </div>
+
+        <img src="https://i.imgur.com/cep41mr.png" alt="Gabriel Epic Comics" class="centered-image" title="Digital Cover Art">
     </div>
 
 </body>
